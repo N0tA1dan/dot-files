@@ -12,7 +12,7 @@ else
 fi
 
 echo "=== Stage 3: Journal Vacuum ==="
-journalctl --vacuum-time=2weeks
+sudo journalctl --vacuum-time=2weeks
 
 echo "=== Stage 4: AUR Update ==="
 if command -v yay &>/dev/null; then
